@@ -1,8 +1,8 @@
 import { ActionTypes } from '../../action-types';
 
 export const calculator = (state = { rows: [] }, { type, payload }) => {
-	var updatedRows = [...state.rows]
-	var rowIndex = state.rows.findIndex((row) => row.rowId === Number(payload.rowId));
+	const updatedRows = [...state.rows]
+	const rowIndex = state.rows.findIndex((row) => row.rowId === Number(payload.rowId));
 
 	switch (type) {
 		case ActionTypes.ROW_ADD:
