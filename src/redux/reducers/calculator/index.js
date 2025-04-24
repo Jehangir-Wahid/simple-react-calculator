@@ -6,6 +6,7 @@ export const calculator = (state = { rows: [] }, { type, payload }) => {
 
 	switch (type) {
 		case ActionTypes.ROW_ADD:
+			console.log("Row Added", state)
 			return { ...state, rows: [...state.rows, payload.value] }
 
 		case ActionTypes.ROW_DELETE:

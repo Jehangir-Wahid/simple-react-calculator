@@ -9,6 +9,7 @@ export const useFormInput = (initialValue) => {
 
 	const handleChange = (e) => {
 		if (e.target.value)
+			console.log('Row ID: ' + e.target.dataset.rowId)
             setValue(e.target.value)
 		
 		if (e.target.dataset.rowAction == 'ROW_DISABLE')
